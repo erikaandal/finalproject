@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script type = "text/javascript" src="init.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYk0iIlcSE7p8n3buS4bcTznVhdj1YQYY&callback=initMap"
+    async defer></script>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+	<div id="weatherInfo">
+		<form action="index.html" method="GET">
+			Current Conditions:<br>
+			Start: <span id="startLocation"></span><br> 
+			Start Weather: <span id="startWeather"></span><br> 
+			End: <span id="endLocation"></span><br>
+			End Weather: <span id="endWeather"></span><br> 
+			<input type="submit" value="New Route">
+		</form>
+	</div>
+  </body>
+</html>
